@@ -1,4 +1,4 @@
-const { JSDOM } = import("jsdom");
+const { JSDOM } = require("jsdom");
 const d3 = import("d3");
 
 module.exports = D3Node;
