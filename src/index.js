@@ -1,10 +1,7 @@
-const { JSDOM } = require("jsdom");
-const d3 = import("d3");
+import { JSDOM } from 'jsdom';
+import * as d3 from 'd3';
 
-module.exports = D3Node;
-
-module.exports.d3 = d3;
-module.exports.JSDOM = JSDOM;
+export { D3Node, d3, JSDOM };
 
 function fixXmlCase(text) {
   // Fix a jsdom issue where all SVG tagNames are lowercased:
